@@ -435,6 +435,13 @@ h2{font-size:clamp(38px,2.2vw,50px);max-width:850px}
 .guarantee p{max-width:760px}.guarantee h3{max-width:900px}
 .rev{flex-basis:clamp(350px,24vw,480px)}.rev p{font-size:16px}.foot{font-size:15px}
 }
+
+/* Mobile CTA: a compact block in document flow, never covering cards. */
+@media(max-width:860px){
+  .fab,.fab.show{position:static;inset:auto;transform:none;opacity:1;pointer-events:auto;transition:none;display:flex;justify-content:center;padding:18px 16px calc(18px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid #e4eafd}
+  .fab .btn{width:auto;max-width:100%;min-height:44px;padding:11px 20px;font-size:14px;line-height:1.4;border-radius:12px;box-shadow:none}
+  .footer{padding-bottom:32px}
+}
 </style>
 </head>
 <body>
